@@ -47,3 +47,4 @@ echo   Your production APK is ready at:
 echo   %~dp0flutter_app\build\app\outputs\flutter-apk\app-release.apk
 echo ========================================================
 pause
+

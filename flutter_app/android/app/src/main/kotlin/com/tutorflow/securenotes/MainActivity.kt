@@ -7,12 +7,10 @@ import android.view.WindowManager
 class MainActivity: FlutterActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Hard-enforce FLAG_SECURE at the window level to prevent screenshots,
-        // screen recording, and task switcher preview leaks.
+        // Hard-enforce FLAG_SECURE to block Android screenshots, screen recordings & app previews
         window.setFlags(
             WindowManager.LayoutParams.FLAG_SECURE,
             WindowManager.LayoutParams.FLAG_SECURE
         )
     }
 }
-
