@@ -1,4 +1,4 @@
-package com.tutorflow.securenotes
+package com.tutorflow.tutorflow_securenotes
 
 import io.flutter.embedding.android.FlutterActivity
 import android.os.Bundle

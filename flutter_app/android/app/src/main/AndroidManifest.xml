@@ -1,15 +1,11 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tutorflow.securenotes">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Permissions for zero-cost networking, audio/video streaming, and live class microphone/camera -->
-    <uses-permission android:name="android.intent.action.VIEW" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-
-    <!-- Strict Anti-Piracy Notice: NO WRITE_EXTERNAL_STORAGE requested -->
 
     <application
         android:label="TutorFlow BCA"
@@ -20,6 +16,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
+            android:taskAffinity=""
             android:theme="@style/LaunchTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
@@ -35,9 +32,20 @@
             </intent-filter>
         </activity>
         
+        <!-- Crucial v2 embedding metadata -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
-</manifest>
 
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+    </queries>
+</manifest>
