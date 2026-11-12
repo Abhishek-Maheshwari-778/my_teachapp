@@ -30,3 +30,4 @@ Zero-Cost LMS & Secure Educational Delivery Platform for BCA Students with Andro
 - `ARCHITECTURE.md`: Architecture diagrams and API contract.
 - `PROJECT_PLAN.md`: 21-day execution plan.
 - `SETUP_GUIDE.md`: Step-by-step operations guide.
+

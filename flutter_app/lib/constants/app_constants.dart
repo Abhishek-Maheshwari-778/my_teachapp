@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppConstants {
-  // Replace with your deployed Google Apps Script Web App URL from Step 1 of SETUP_GUIDE.md
-  static const String gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbz_REPLACE_WITH_YOUR_DEPLOYED_GAS_URL/exec';
+  // Configured deployed Google Apps Script Web App URL
+  static const String gasWebAppUrl = 'https://script.google.com/macros/s/AKfycbwiDEZV39kaj3-rPSxCoRxUlM23otfezniBAZkE3y8uunuV2SR70EFeasLEjsSRkkZ4TA/exec';
 
   // Configured IDs from chat.text
   static const String spreadsheetId = '1AKGL9CXjkpGAdO3k22l8cmpHUgVAWfLTajzPg7GT6CI';
